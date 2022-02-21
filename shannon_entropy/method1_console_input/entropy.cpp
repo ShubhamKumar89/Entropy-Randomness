@@ -4,7 +4,7 @@ using namespace std;
 double entropy(string str, double count, int window_size)
 {
     if (str.length() == 0)
-        return -((count / window_size) * log2f(count / window_size)); // use log base 2
+        return abs(-((count / window_size) * log2f(count / window_size))); // use log base 2
 
     if (str[0] == '1')
         count++;
