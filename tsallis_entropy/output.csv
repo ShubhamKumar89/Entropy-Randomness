@@ -1,7 +1,22 @@
+Window Size : 5
+For q = 2 : 
+Entropy 1 : 0.48
+Entropy 2 : 0.48
+Entropy 3 : 0.32
+Entropy 4 : 0.48
+Entropy 5 : 0.48
 
+For q = 3 : 
+Entropy 1 : 0.86
+Entropy 2 : 0.86
+Entropy 3 : 0.74
+Entropy 4 : 0.86
+Entropy 5 : 0.86
 
-tsallis_entropy for q = 2 is 0.25
+For q = 4 : 
+Entropy 1 : 0.948267
+Entropy 2 : 0.948267
+Entropy 3 : 0.862933
+Entropy 4 : 0.948267
+Entropy 5 : 0.948267
 
-tsallis_entropy for q = 3 is 0.3125
-
-tsallis_entropy for q = 4 is 0.270833
