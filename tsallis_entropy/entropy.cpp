@@ -6,7 +6,7 @@ double probability_sum(string str, double count, int window_size, int q)
 {
     if (str.empty())
     {
-        double probSum_0_and_1 = pow((count / window_size), q) + pow(((window_size - count) / window_size), q);
+        double probSum_0_and_1 = (pow((count / window_size), q) + pow(((window_size - count) / window_size), q));
         return probSum_0_and_1;
     }
 
@@ -43,7 +43,8 @@ int main()
         f2 << "For q = " << q << " : " << endl;
         for (int i = 0; i < no_of_entropy; i++)
         {
-            f2 << "Entropy " << i + 1 << " : " << (1 - probability_sum(str.substr(i, window_size), 0, window_size, q) / (q - 1)) << endl;
+            double x = probability_sum(str.substr(i, window_size), 0, window_size, q);
+            f2 << "Entropy " << i + 1 << " : " << ((1 - x) / (q - 1)) << endl;
         }
         f2 << endl;
         q++;
