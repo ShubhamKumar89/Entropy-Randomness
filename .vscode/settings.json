@@ -1,7 +1,0 @@
-{
-  "files.associations": {
-    "*.json": "bat",
-    "iostream": "cpp",
-    "iosfwd": "cpp"
-  }
-}
